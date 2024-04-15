@@ -154,7 +154,7 @@
                 <input type="text" placeholder="От какой суммы ₽" class ="input__badwords">
               </div>
               <div class="budget__toggle-block"> 
-                <p>Присылать с бюджетом «По согласованию»</p>
+                <p>Присылать с бюджетом <br> «По согласованию»</p>
                 <div class="container"> 
   <label class="switch" for="checkbox">
     <input type="checkbox" id="checkbox" />
@@ -175,7 +175,7 @@
         let key_word_placehold = document.getElementById("key_word_placeholder").value;
         key_btn.addEventListener("click", ()=>{
 
-            tg.sendData(key_word_placehold);
+            tg.sendData("hallo");
             tg.close();
         });
 
