@@ -127,7 +127,7 @@
                   <input type="text" placeholder="Например: Битрикс, Figma, Макет" class ="input__badwords" id = "key_word_placeholder"/>
                 </div>
                 <div class="keywords__container_button">
-				<input type="button" class="add-button" id="key_word_btn" value = "Добавить" onclick="alert('нажал')"/>
+				<input type="button" class="add-button" id="key_word_btn" value = "Добавить" "/>
 				</div>
                 <div class="keywords__container"></div>
               </div>
@@ -174,7 +174,7 @@
         let key_btn = document.getElementById("key_word_btn");
         let key_word_placehold = document.getElementById("key_word_placeholder").value;
         key_btn.addEventListener("click", ()=>{
-            alert("asd")
+
             tg.sendData(key_word_placehold);
             tg.close();
         });
