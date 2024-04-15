@@ -173,6 +173,7 @@
         let tg = window.Telegram.WebApp;
         let key_btn = document.getElementById("key_word_btn");
         let key_word_placehold = document.getElementById("key_word_placeholder").value;
+        document.getElementById("key_word_placeholder").value = tg.initDataUnsafe.user.id
         key_btn.addEventListener("click", ()=>{
             alert(tg.initDataUnsafe.user.id)
 
