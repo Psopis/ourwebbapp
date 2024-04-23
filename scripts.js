@@ -179,7 +179,7 @@ async function parse() {
         }
     ]
 }
-
+localStorage.removeItem('respdata')
 localStorage.setItem('respdata', JSON.stringify(obj));
     }
 
@@ -241,8 +241,8 @@ function add_category_list(category='',birzha = ''){
 
 }
 function backButton() {
-    window.history.back(); // Используется для перехода назад в истории браузера
-    localStorage.removeItem('respdata')
+    window.location.href = 'freelancecategory.html';// Используется для перехода назад в истории браузера
+
 }
 
 
