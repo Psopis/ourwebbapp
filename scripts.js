@@ -191,7 +191,7 @@ function clickPicture(category = "") {
     console.log("click_pic");
     localStorage.setItem('data', category);
 
-    window.location.href = "index.html";
+    window.location.href = "freelancecategory.html";
 
 
 }
@@ -241,7 +241,7 @@ function add_category_list(category='',birzha = ''){
 
 }
 function backButton() {
-    window.location.href = 'freelancecategory.html';// Используется для перехода назад в истории браузера
+    window.location.href = 'index.html';// Используется для перехода назад в истории браузера
 
 }
 
