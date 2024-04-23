@@ -144,7 +144,7 @@ async function parse() {
                     "id": 4,
                     "name": "Ui/Ux",
                     "children": []
-                }]
+                },]
         },
         {
             "id": 2,
@@ -153,6 +153,26 @@ async function parse() {
                 {
                     "id": 4,
                     "name": "Python",
+                    "children": []
+                },{
+                    "id": 4,
+                    "name": "Ui/Ux",
+                    "children": []
+                },{
+                    "id": 4,
+                    "name": "Ui/Ux",
+                    "children": []
+                },{
+                    "id": 4,
+                    "name": "Ui/Ux",
+                    "children": []
+                },{
+                    "id": 4,
+                    "name": "Ui/Ux",
+                    "children": []
+                },{
+                    "id": 4,
+                    "name": "Ui/Ux",
                     "children": []
                 }
             ]
