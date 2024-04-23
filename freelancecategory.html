@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -12,65 +12,70 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="favicon/favicon.ico">
+
+
     <meta name="msapplication-TileColor" content="#5bbad5">
-    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+
     <meta name="theme-color" content="#000">
     <meta name="msapplication-navbutton-color" content="#000">
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
     <title>Главная</title>
+    <link rel="stylesheet" href="categeory_style.css">
+    <script src="scripts.js"></script>
     <meta name="description" content="">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <noscript>У вас отключен JavaScript. Это пугает. You have JavaScript disabled. It scares.</noscript>
-    <div class="wrapper">
-      <main>
-        <div class="category">
-          <div class="container">
-            <div class="category__header"> 
-			<center>
-              <button class="back_button_category">
-                 <span class = "back_span_category">Назад</span>
-              </button>
-			  </center>
-              <center><div class="category__header-middle"> <img src="img/exchanges/kwork.png" alt=""></div></center>
-              
-            </div>
-            <div class="category__block-label">Выбери категории</div>
-            <div class="category__block"> 
-              <div class="dropdown">
-                <div class="dropdown__header">SEO и трафик<span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+    <script>
 
-</svg></span></div>
-                <div class="dropdown__list">
-                  <ul>
-                    <li>SEO</li>
-                    <li>Трафик</li>
-                    <li>Статистика и аналитика</li>
-                  </ul>
+    // window.onload = function (){
+    //     set_picture_category();
+    // console.log("asdasdasd")
+    // };
+        document.addEventListener("DOMContentLoaded", function () {
+            displayCategories();
+        });
+
+
+
+    </script>
+</head>
+<body>
+<noscript>У вас отключен JavaScript. Это пугает. You have JavaScript disabled. It scares.</noscript>
+<div class="wrapper">
+    <main>
+        <div class="category">
+            <div class="container">
+                <div class="category__header">
+                    <center>
+                        <button class="back_button_category" onclick='backButton()'>
+                            <span class="back_span_category">Назад</span>
+                        </button>
+                    </center>
+                    <center>
+                        <div class="category__header-middle" id="image-container">
+                            <img class="img_fl" id = 'img_fl' src="img/exchanges/fl.png" alt=""/>
+                            <img class="img_free" id = 'img_free' src="img/exchanges/free.png" alt=""/>
+                            <img class="img_kwork" id = 'img_kwork' src="img/exchanges/kwork.png" alt=""/>
+                            <img class="img_habr" id = 'img_habr' src="img/exchanges/freelanceHabr.png" alt=""/>
+                        </div>
+                    </center>
+
                 </div>
-              </div>
-              <center>
-			  <button class="category__header-reset reset-visible">
-                Сбросить
-              </button>
-			  </center>
-             
-             
-             
+                <div class="category__block-label">Выбери категории</div>
+                <div class="category__block">
+                    <div class="dropdown">
+                        <div id="listContainer">
+                            <div class="dropdown-menu">
+
+                                <!-- Остальные категории -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-          </div>
         </div>
-      </main>
-    </div>
-    <script src="js/scripts.min.js"></script>
-    
-  </body>
+    </main>
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body>
 </html>

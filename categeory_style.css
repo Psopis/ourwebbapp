@@ -1,0 +1,168 @@
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    --font-sans: 'Libre Franklin';
+    background: #FFFCF2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+
+
+}
+
+
+.category__block-label {
+    display: flex;
+
+    font-size: 25px;
+    font-weight: 700;
+    justify-content: center;
+    color: #000000;
+    padding-bottom: 1em;
+}
+
+.category__header{
+    vertical-align: middle;
+    display: block;
+
+}
+
+.back_button_category {
+    flex-shrink: 0;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: mulish, sans-serif;
+    box-shadow: -3px 3px 7px #999494;
+    color: #FFFCF2;
+    position: relative;
+    width: 15em;
+    height: 52px;
+    background-color: #000000;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.back_button_category:active {
+    background-color: seagreen;
+}
+
+.back_button_category:hover {
+    background-color: seagreen;
+    transition: background-color 0.5s;
+}
+
+.button_of_category:active {
+    background-color: seagreen;
+}
+
+.button_of_category:hover {
+    background-color: seagreen;
+    transition: background-color 0.5s;
+}
+
+
+
+.sublist{
+    padding: 0;
+
+
+}
+.details {
+    display: inline;
+
+    height: 3.8em;
+    width: 100%;
+    margin-right: 0;
+    align-items: start;
+
+    background-color: #F5F2EA;
+    /*background-color: #000009;*/
+    box-shadow:  -7px 5px 5px gray;
+    color: #212529;
+    /*color: #FFFCF2;*/
+
+    border: 1px solid #bdbdbd;
+    /*border: none;*/
+    border-radius: 5px;
+
+}
+
+
+.listContainer {
+
+    padding-left: 0;
+    list-style: none;
+    left:0;
+
+}
+
+
+.slide-checkbox {
+    text-align: start;
+    font-weight: 700;
+    font-size: 20px;
+
+    width: 20.7em;
+    height: 3.8em;
+
+
+    background-color: #F5F2EA;
+    /*background-color: #F5F2EA;*/
+
+box-shadow:  -7px 5px 5px gray;
+    border: 1px solid #bdbdbd;
+
+
+    color: black;
+    /*color: #212529;*/
+
+    cursor: pointer;
+}
+
+.slide-checkbox::after{
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin-left: -10px;
+    left: 50%;
+    border-top: 10px solid #337AB7;
+    bottom: -10px;
+}
+
+
+.listItem {
+
+
+    width: 100%;
+
+}
+.img_fl {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    display: none;
+    height: 5em;
+}
+
+.img_free {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    display: none;
+    height: 6em;
+}
+
+.img_habr {
+
+    padding-top: 2em;
+    padding-bottom: 1em;
+    display: none;
+    height: 5em;
+    width: 5em;
+
+}
+
+.img_kwork {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    display: none;
+    height: 6em;
+}

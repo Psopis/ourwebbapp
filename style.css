@@ -1,226 +1,244 @@
-@font-face{font-family:Mulish;font-style:normal;font-weight:400;src:url(../fonts/mulish/Mulish-Regular.woff2) format("woff2"),url(../fonts/mulish/Mulish-Regular.woff) format("woff"),url(../fonts/mulish/Mulish-Regular.ttf) format("truetype"),url(../fonts/mulish/Mulish-Regular.eot),url(../fonts/mulish/Mulish-Regular.eot?#iefix) format("embedded-opentype")}
-@font-face{font-family:Mulish;font-style:normal;font-weight:600;src:url(../fonts/mulish/Mulish-SemiBold.woff2) format("woff2"),url(../fonts/mulish/Mulish-SemiBold.woff) format("woff"),url(../fonts/mulish/Mulish-SemiBold.ttf) format("truetype"),url(../fonts/mulish/Mulish-SemiBold.eot),url(../fonts/mulish/Mulish-SemiBold.eot?#iefix) format("embedded-opentype")}
-@font-face{font-family:Mulish;font-style:normal;font-weight:700;src:url(../fonts/mulish/Mulish-Bold.woff2) format("woff2"),url(../fonts/mulish/Mulish-Bold.woff) format("woff"),url(../fonts/mulish/Mulish-Bold.ttf) format("truetype"),url(../fonts/mulish/Mulish-Bold.eot),url(../fonts/mulish/Mulish-Bold.eot?#iefix) format("embedded-opentype")}
-@font-face{font-family:Mulish;font-style:normal;font-weight:800;src:url(../fonts/mulish/Mulish-ExtraBold.woff2) format("woff2"),url(../fonts/mulish/Mulish-ExtraBold.woff) format("woff"),url(../fonts/mulish/Mulish-ExtraBold.ttf) format("truetype"),url(../fonts/mulish/Mulish-ExtraBold.eot),url(../fonts/mulish/Mulish-ExtraBold.eot?#iefix) format("embedded-opentype")}
-body{
-	background:#FFFCF2;
-	
-	
-	font-family:mulish, sans-serif;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 18px;
-	
-	
-}
-.container{
-	padding-bottom:100px;
-}
-.settings_birzha{
-	
-	display: flex;
-	font-size:20px;
-	font-weight:900;
-	justify-content: center;
-	color:#000f09;
-	padding-bottom:40px;
-}
-.hello_you{
-	font-weight:700;
-	display: flex;
-	font-size:30px;
-	justify-content: center;
-	color:#000f09;
-}
-.birzha_selector_block{
-	width: 370px;
-	height: 70px;
-	background:#F5F2EA;
-	border-radius:1em;
-	padding-top: 15px;
-	padding: 5px;
-	float: left;
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    --font-sans: 'Libre Franklin';
+    background: #FFFCF2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+
+
 }
 
-	
-	
-.FL_block{
-	display: inline-block;
-	
-}	
-.exchanges-toggle__img_fl{
-	padding-left:10px;
-	padding-top:2px;
-	width:70px;
-	
-	
+.container {
+
+    padding-bottom: 100px;
 }
-.img_fl{
-	
-	height:65px;
-	
-	
+
+.settings_birzha {
+
+    display: flex;
+    font-size:30px;
+    font-weight: 700;
+    justify-content: center;
+    color: #000000;
+    padding-bottom: 40px;
 }
-.span_div_fl{
-	position: relative;
-	bottom:75px;
-	left:100px;
-	
-	
+
+.hello_you {
+    font-weight: 700;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    color: #000000;
 }
-.span_fl{
-	font-size:25px;
-	text-align:left;
-	
+
+.birzha_selector_block {
+    width: 370px;
+    height: 70px;
+    background: #F5F2EA;
+    border-radius: 1em;
+
+    padding: 5px;
+    float: left;
 }
-.toggle input[type=button]
-{
-	font-size:15px;
-	font-weight:700;
-	font-family:mulish, sans-serif;
-	left:270px;
-	bottom:140px;
-	position:relative;
-	width:82px;
-	height:42px;
-	background-color:#D9E1E5;
-	border-radius:15px ;
-	border-color:#D9E1E5;
-	
-	
-	}
-	
-.choices{
-	padding-top:30px;
-	padding-left:15px;
-	
+
+
+.FL_block {
+    display: inline-block;
+
 }
-.choices__label{
-	padding-bottom:10px;
+
+.exchanges-toggle__img_fl {
+    padding-left: 10px;
+    padding-top: 2px;
+    width: 70px;
+
+
 }
-.choices__info{
-	padding-bottom:10px;
-}	
-.input__badwords{
-	display: block;
-	
-  width: 70%;
-  height: calc(2.25rem + 2px);
-  padding: 0.375rem 0.75rem;
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #F5F2EA;
-  background-clip: padding-box;
-  border: 1px solid #bdbdbd;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+.img_fl {
+
+    height: 65px;
+
+
 }
-.choices__input{
-	padding-bottom:20px;
+
+.span_div_fl {
+    position: relative;
+    bottom: 75px;
+    left: 100px;
+
+
 }
-.keywords__container_button{
-	padding-bottom:10px;
+
+.span_fl {
+    font-size: 25px;
+    text-align: left;
+
 }
-.add-button{
-	
-	
-  width: 77.5%;
-  height: 50px;
-  padding: 0.375rem 0.75rem;
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 400;
-  
-  color: #212529;
-  background-color: #F5F2EA;
-  
-  border: 1px solid #bdbdbd;
-  border-radius: 0.25rem;
-  
-}	
+
+.toggle input[type=button] {
+
+    font-size: 15px;
+    font-weight: 500;
+
+
+    text-decoration: none;
+    color: #212529;
+    background-color: #F5F2EA;
+    background-clip: padding-box;
+    border: 1px solid #999494;
+    box-shadow:  -3px 3px 7px #bdbdbd;
+    left: 270px;
+    bottom: 140px;
+    position: relative;
+    width: 82px;
+    height: 42px;
+
+    border-radius:  10px 0px  0px 10px;
+    cursor: pointer;
+
+
+}
+.toggle input[type=button]:hover{
+    background-color: #357838;
+    transition: background-color 0.5s;
+}
+.toggle input[type=button]:active{
+    background-color: #66bb6a;
+}
+.choices {
+    padding-top: 30px;
+    padding-left: 5px;
+    width:100%;
+}
+
+.choices__label {
+    padding-bottom: 10px;
+}
+
+.choices__info {
+    padding-bottom: 10px;
+}
+.budget__label{
+    padding-bottom: 10px;
+}
+.input__badwords {
+    display: block;
+
+    width: 90%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #F5F2EA;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.choices__input {
+    padding-bottom: 20px;
+}
+
+.keywords__container_button {
+    padding-bottom: 10px;
+}
+
+.add-button {
+
+    width: 97.4%;
+    height: 50px;
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+
+    color: #ffffff;
+    background-color: #000000;
+    box-shadow:  -4px 4px 5px #999494;;
+    border: 1px solid #000000;
+    border-radius: 0.3rem;
+
+}
+
 .switch {
-  display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px;
-  left:230px;
-  bottom:52px;
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+    left: 290px;
+    bottom: 55px;
 }
 
 .switch input {
-  display:none;
+    display: none;
 }
 
 .slider {
-  background-color: #ccc;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: .4s;
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
 }
 
 .slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: .4s;
-  width: 26px;
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
 }
 
 input:checked + .slider {
-  background-color: #66bb6a;
+    background-color: #66bb6a;
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+    transform: translateX(26px);
 }
 
 .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 
-.back_button_category{
-	font-size:15px;
-	font-weight:700;
-	font-family:mulish, sans-serif;
-	
-	
-	position:relative;
-	width:152px;
-	height:52px;
-	background-color:#D9E1E5;
-	border-radius:15px ;
-	border-color:#D9E1E5;
+.category__header-reset {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: mulish, sans-serif;
+    position: relative;
+    width: 132px;
+    height: 42px;
+
+    background-color: #D9E1E5;
+    border-radius: 15px;
+    border-color: #D9E1E5;
+
 }
-.category__header-reset{
-	font-size:15px;
-	font-weight:700;
-	font-family:mulish, sans-serif;
-	position:relative;
-	width:132px;
-	height:42px;
-	
-	background-color:#D9E1E5;
-	border-radius:15px ;
-	border-color:#D9E1E5;
-	
+
+.category__header-middle {
+    padding-bottom: 20px;
+    padding-top: 30px;
 }
-.category__header-middle{
-	padding-bottom:20px;
-	padding-top:30px;
-}
+
+
+

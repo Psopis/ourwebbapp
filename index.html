@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -12,176 +12,195 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#5bbad5">
-    <meta name="msapplication-config" content="favicon/browserconfig.xml">
     <meta name="theme-color" content="#000">
     <meta name="msapplication-navbutton-color" content="#000">
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
     <title>Главная</title>
     <meta name="description" content="">
+
+
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <noscript>У вас отключен JavaScript. Это пугает. You have JavaScript disabled. It scares.</noscript>
-    <div class="wrapper">
-      <main>
+    <script src="scripts.js"></script>
+</head>
+<body>
+<noscript>У вас отключен JavaScript. Это пугает. You have JavaScript disabled. It scares.</noscript>
+<div class="wrapper">
+    <main>
         <section class="search-setup">
-          <div class="container">
-            <div class="search-setup__hello"> 
-              <p class="hello_you">Привет, ИМЯ </p>
-			  <span class="settings_birzha">Настрой под себя Биржу</span>
+            <div class="container">
+                <div class="search-setup__hello">
+                    <p class="hello_you">Привет, ИМЯ </p>
+                    <span class="settings_birzha">Настрой под себя Биржу</span>
+                </div>
+                <div class="search-setup__exchanges">
+                    <div class="birzha_selector_block">
+                        <div class='FL_block'>
+                            <div class="exchanges-toggle__img_fl">
+                                <img class="img_fl" src="img/exchanges/fl.png" alt=""/>
+                                <div class="span_div_fl">
+                                    <p class="span_fl">FL</p>
+                                </div>
+                                <div class="toggle">
+                                    <input type="button" value="Выбрать"
+                                           onclick="clickPicture('fl.ru')"/>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="search-setup__exchanges"> 
-              <div class="birzha_selector_block">
-			  <div class='FL_block'>
-			  <div class="exchanges-toggle__img_fl">
-			  <img class = "img_fl" src="img/exchanges/fl.png" alt=""/>
-			  <div class="span_div_fl">
-			  <p class = "span_fl">FL</p>
-			  </div>
-			  <div class="toggle"> 
-                <input type="button" id = "mybutton" value="Выбрать" onclick="document.location='category/flcategory.html'"/>
+
+
+            <div class="container">
+
+                <div class="search-setup__exchanges">
+                    <div class="birzha_selector_block">
+                        <div class='FL_block'>
+                            <div class="exchanges-toggle__img_fl">
+                                <img class="img_fl" src="img/exchanges/kwork.png" alt=""/>
+                                <div class="span_div_fl">
+                                    <p class="span_fl">Kwork</p>
+                                </div>
+                                <div class="toggle">
+                                    <input type="button" value="Выбрать"
+                                           onclick="clickPicture('kwork.ru')"/>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-			  </div>
-			  
-			  </div>
-			  </div>
-		     </div>
-           </div>
-		   
-		   
-		   <div class="container">
-            
-            <div class="search-setup__exchanges"> 
-              <div class="birzha_selector_block">
-			  <div class='FL_block'>
-			  <div class="exchanges-toggle__img_fl">
-			  <img class = "img_fl" src="img/exchanges/kwork.png" alt=""/>
-			  <div class="span_div_fl">
-			  <p class = "span_fl">Kwork</p>
-			  </div>
-			  <div class="toggle"> 
-                <input type="button" id = "mybutton" value="Выбрать" onclick="document.location='category/kworkcategory.html'"/>
+                </div>
+
+            </div>
+
+            <div class="container">
+
+                <div class="search-setup__exchanges">
+                    <div class="birzha_selector_block">
+                        <div class='FL_block'>
+                            <div class="exchanges-toggle__img_fl">
+                                <img class="img_fl" src="img/exchanges/freelanceHabr.png" alt="" style = "border-radius: 15px"/>
+                                <div class="span_div_fl">
+                                    <p class="span_fl">Habr</p>
+                                </div>
+                                <div class="toggle">
+                                    <input type="button" value="Выбрать"
+                                           onclick="clickPicture('freelance.habr.com')"/>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-			  </div>
-			  
-			  </div>
-			  </div>
-		     </div>
-            
-           </div>
-		   
-		   <div class="container">
-            
-            <div class="search-setup__exchanges"> 
-              <div class="birzha_selector_block">
-			  <div class='FL_block'>
-			  <div class="exchanges-toggle__img_fl">
-			  <img class = "img_fl" src="img/exchanges/freelanceHabr.jpg" alt=""/>
-			  <div class="span_div_fl">
-			  <p class = "span_fl">Habr</p>
-			  </div>
-			  <div class="toggle"> 
-                <input type="button" id = "mybutton" value="Выбрать" onclick="document.location='category/habrcategory.html'"/>
+                </div>
+
+            </div>
+
+            <div class="container">
+
+                <div class="search-setup__exchanges">
+                    <div class="birzha_selector_block">
+                        <div class='FL_block'>
+                            <div class="exchanges-toggle__img_fl">
+                                <img class="img_fl" src="img/exchanges/free.png" alt=""/>
+                                <div class="span_div_fl">
+                                    <p class="span_fl">Freelance</p>
+                                </div>
+                                <div class="toggle">
+                                    <input type="button" value="Выбрать"
+                                           onclick="clickPicture('freelance.ru')"/>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-			  </div>
-			  
-			  </div>
-			  </div>
-		     </div>
-            
-           </div>
-		   
-		   <div class="container">
-            
-            <div class="search-setup__exchanges"> 
-              <div class="birzha_selector_block">
-			  <div class='FL_block'>
-			  <div class="exchanges-toggle__img_fl">
-			  <img class = "img_fl" src="img/exchanges/free.png" alt=""/>
-			  <div class="span_div_fl">
-			  <p class = "span_fl">Freelance</p>
-			  </div>
-			  <div class="toggle"> 
-                <input type="button" id = "mybutton" value="Выбрать" onclick="document.location='freelancecategory.html'"/>
-                    </div>
-			  </div>
-			  
-			  </div>
-			  </div>
-		     </div>
-            
-           </div>
+                </div>
+
+            </div>
         </section>
-		<section>
-		<div class="choices">
+        <section>
+            <div class="choices">
                 <div class="choices__label">Ключевые слова:</div>
-				<div class="choices__info">Буду присылать только те задачи,<br> в описании которых есть эти слова</div>
+                <div class="choices__info">Буду присылать только те задачи,<br> в описании которых есть эти слова</div>
                 <div class="choices__input input__keywords">
-                  <input type="text" placeholder="Например: Битрикс, Figma, Макет" class ="input__badwords" id = "key_word_placeholder"/>
+                    <label><input type="text" placeholder="Например: Битрикс, Figma, Макет" value=''
+                                  class="input__badwords"
+                                  id="key_word_placeholder_1"/></label>
                 </div>
                 <div class="keywords__container_button">
-				<input type="button" class="add-button" id="key_word_btn" value = "Добавить" />
-				</div>
+                    <input type="button" class="add-button" id="key_word_btn" value="Добавить"
+                           onclick="add_button_for_words('key')"/>
+                </div>
                 <div class="keywords__container"></div>
-              </div>
-		</section>
-		<section>
-		<div class="choices">
-                <div class="choices__label">Слова-исключения:</div>
-				<div class="choices__info">Буду присылать только те задачи,<br>
-				в описании которых нет этих слов</div>
-                <div class="choices__input input__keywords">
-                  <input type="text" placeholder="Например: Дёшево, Быстро" class ="input__badwords"/>
-				  
-                </div>
-                
-                <div class="keywords__container_button">
-				<input type="button" class="add-button" value = "Добавить" />
-				</div>
-              </div>
-		</section>
-		<section>
-		<div class="choices">
-              <div class="budget__label">Бюджет</div>
-              <div class="budget__input-block"> 
-                <input type="text" placeholder="От какой суммы ₽" class ="input__badwords">
-              </div>
-              <div class="budget__toggle-block"> 
-                <p>Присылать с бюджетом <br> «По согласованию»</p>
-                <div class="container"> 
-  <label class="switch" for="checkbox">
-    <input type="checkbox" id="checkbox" />
-    <div class="slider round"></div> 
-  </label>
-</div>
-              </div>
             </div>
-		</section>
-		
-      </main>
-    </div>
-    <script src="js/scripts.min.js"></script>
-   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-	<script>
-        let tg = window.Telegram.WebApp;
-        let key_btn = document.getElementById("key_word_btn");
+        </section>
+        <section>
+            <div class="choices">
+                <div class="choices__label">Слова-исключения:</div>
+                <div class="choices__info">Буду присылать только те задачи,<br>
+                    в описании которых нет этих слов
+                </div>
+                <div class="choices__input input__keywords">
+                    <label>
+                        <input type="text" placeholder="Например: Дёшево, Быстро" class="input__badwords"
+                               id="key_word_placeholder_2"/>
+                    </label>
 
-        document.getElementById("key_word_placeholder").value = tg.initDataUnsafe.user.id;
-        key_btn.addEventListener("click", ()=>{
-            alert(tg.initDataUnsafe.user.id);
+                </div>
+
+                <div class="keywords__container_button">
+                    <input type="button" class="add-button" value="Добавить" onclick="add_button_for_words('bad')"/>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="choices">
+                <div class="budget__label">Бюджет:</div>
+                <div class="budget__input-block">
+
+                    <div class="choices__input input__keywords">
+                        <label>
+                            <input type="text" placeholder="От какой суммы ₽" class="input__badwords"
+                                   id="key_word_placeholder_3">
+                        </label>
+
+                    </div>
+                </div>
+                <div class="budget__toggle-block">
+                    <div class="keywords__container_button">
+                        <input type="button" class="add-button" value="Добавить"
+                               onclick="add_button_for_words('money')"/>
+                    </div>
+                    <p>Присылать с бюджетом <br> «По согласованию»</p>
+                    <div class="container">
+                        <label class="switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" class="checkooi" onclick="check_check()"/>
+                            <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <span id="span_test"></span>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
 
 
 
-        });
 
-    </script>
-		
-  </body>
+
+    parse();
+
+</script>
+<!--<script src="https://telegram.org/js/telegram-web-app.js"></script>-->
+
+
+</body>
 </html>
