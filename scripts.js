@@ -191,7 +191,7 @@ function clickPicture(category = "") {
     console.log("click_pic");
     localStorage.setItem('data', category);
 
-    window.location.href = "freelancecategory.html";
+    window.location.href = "index.html";
 
 
 }
