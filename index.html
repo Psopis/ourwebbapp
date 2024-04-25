@@ -19,9 +19,10 @@
     <title>Главная</title>
     <meta name="description" content="">
 
-<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js"></script>
+
 </head>
 <body>
 <noscript>У вас отключен JavaScript. Это пугает. You have JavaScript disabled. It scares.</noscript>
@@ -81,7 +82,8 @@
                     <div class="birzha_selector_block" onclick="clickPicture('freelance.habr.com')">
                         <div class='FL_block'>
                             <div class="exchanges-toggle__img_fl">
-                                <img class="img_fl" src="img/exchanges/freelanceHabr.png" alt="" style = "border-radius: 15px"/>
+                                <img class="img_fl" src="img/exchanges/freelanceHabr.png" alt=""
+                                     style="border-radius: 15px"/>
                                 <div class="span_div_fl">
                                     <p class="span_fl">Habr</p>
                                 </div>
@@ -118,70 +120,69 @@
                 </div>
 
             </div>
-        </section>
-        <section>
-            <div class="choices">
-                <div class="choices__label">Ключевые слова:</div>
-                <div class="choices__info">Буду присылать только те задачи,<br> в описании которых есть эти слова</div>
-                <div class="choices__input input__keywords">
-                    <label><input type="text" placeholder="Например: Битрикс, Figma, Макет" value=''
-                                  class="input__badwords"
-                                  id="key_word_placeholder_1"/></label>
-                </div>
-                <div class="keywords__container_button">
-                    <input type="button" class="add-button" id="key_word_btn" value="Добавить"
-                           onclick="add_button_for_words('key')"/>
-                </div>
-                <div class="keywords__container"></div>
-            </div>
-        </section>
-        <section>
-            <div class="choices">
-                <div class="choices__label">Слова-исключения:</div>
-                <div class="choices__info">Буду присылать только те задачи,<br>
-                    в описании которых нет этих слов
-                </div>
-                <div class="choices__input input__keywords">
-                    <label>
-                        <input type="text" placeholder="Например: Дёшево, Быстро" class="input__badwords"
-                               id="key_word_placeholder_2"/>
-                    </label>
 
-                </div>
 
-                <div class="keywords__container_button">
-                    <input type="button" class="add-button" value="Добавить" onclick="add_button_for_words('bad')"/>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="choices">
-                <div class="budget__label">Бюджет:</div>
-                <div class="budget__input-block">
-
+            <div class="choices-setup keywords-block">
+                <div class="choices">
+                    <div class="choices__label">Ключевые слова:</div>
+                    <div class="choices__info">Буду присылать только те задачи,<br> в описании которых есть эти слова
+                    </div>
                     <div class="choices__input input__keywords">
-                        <label>
-                            <input type="text" placeholder="От какой суммы ₽" class="input__badwords"
-                                   id="key_word_placeholder_3">
-                        </label>
+                        <input type="text" placeholder="Например: Битрикс, Figma, Макет"
+                               class="input__badwords"/>
+                        <span class="add-button">Добавить</span>
 
                     </div>
+                    <div class="keywords__container"></div>
                 </div>
-                <div class="budget__toggle-block">
-                    <div class="keywords__container_button">
-                        <input type="button" class="add-button" value="Добавить"
-                               onclick="add_button_for_words('money')"/>
+            </div>
+
+            <div class="choices-setup exception-block">
+                <div class="choices">
+                    <div class="choices__label">Слова-исключения:</div>
+                    <div class="choices__info">Буду присылать только те задачи,<br>
+                        в описании которых нет этих слов
                     </div>
-                    <p>Присылать с бюджетом <br> «По согласованию»</p>
-                    <div class="container">
-                        <label class="switch" for="checkbox">
-                            <input type="checkbox" id="checkbox" class="checkooi" onclick="check_check()"/>
-                            <div class="slider round"></div>
-                        </label>
+                    <div class="choices__input input__keywords">
+
+                            <input type="text" placeholder="Например: Дёшево, Быстро" class="input__badwords"/>
+                            <span class="add-button">Добавить</span>
+
                     </div>
+                    <div class="keywords__container"></div>
                 </div>
-                <div>
-                    <span id="span_test"></span>
+            </div>
+
+
+            <div class="search-setup__budget budget">
+                <div class="choices">
+                    <div class="budget__label">Бюджет:</div>
+                    <div class="budget__input-block">
+
+                        <div class="choices__input input__keywords">
+                            <label>
+                                <input type="text" placeholder="От какой суммы ₽" class="input__badwords"
+                                       id="key_word_placeholder_3">
+
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="budget__toggle-block">
+                        <!--                    <div class="keywords__container_button">-->
+
+                        <!--                        <input type="button" class="add-button" value="Добавить"-->
+                        <!--                               onclick="add_button_for_words('money')"/>-->
+                        <!--                    </div>-->
+                        <p>Присылать с бюджетом <br> «По согласованию»</p>
+                        <div class="container">
+                            <label class="switch" for="checkbox">
+                                <input type="checkbox" id="checkbox" class="checkooi"/>
+
+                                <div class="slider round"></div>
+                            </label>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -193,11 +194,13 @@
 <script>
 
 
+    document.addEventListener("DOMContentLoaded", function () {
+        add_to();
 
-
-
+    });
+    money_add()
     parse();
-
+    check_switch_toggle()
 </script>
 <!--<script src="https://telegram.org/js/telegram-web-app.js"></script>-->
 

@@ -40,7 +40,7 @@ body {
     height: 52px;
     background-color: #000000;
     border-radius: 5px;
-    border: 1px solid #000000;
+    border: 0;
 }
 
 .back_button_category:active {
@@ -73,18 +73,18 @@ body {
 
     width: 98vw;
     height: 7vh;
-    margin-right: 0;
+    margin-right: 1px;
     align-items: start;
 
     background-color: floralwhite;
     /*background-color: #000009;*/
-    box-shadow:  -7px 5px 5px gray;
+
     color: #212529;
     /*color: #FFFCF2;*/
 
-    border: 1px solid #bdbdbd;
+    border: 1px solid floralwhite;
     /*border: none;*/
-    border-radius: 5px;
+
 
 }
 
@@ -109,8 +109,8 @@ body {
     background-color: #F5F2EA;
     /*background-color: #F5F2EA;*/
 
-    box-shadow:  -7px 5px 5px gray;
-    border: 1px solid #bdbdbd;
+
+    border: 1px solid #F5F2EA;
 
 
     color: black;

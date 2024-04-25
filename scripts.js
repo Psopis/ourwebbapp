@@ -4,185 +4,183 @@ let base_url = 'https://9b33-95-55-136-152.ngrok-free.app';
 
 async function parse() {
 
-    try{
+    try {
         obj = await axios.get(base_url + '/api/projects/categories/');
         localStorage.setItem('respdata', JSON.stringify(obj.data));
+    } catch (e) {
+        console.log("ERROR axios cant parse", e)
+        obj = {
+            "freelance.ru": [
+                {
+                    "id": 7,
+                    "name": "Я хуесос",
+                    "children": [{
+                        "id": 12,
+                        "name": "Верстка",
+                        "children": [
+                            {
+                                "id": 15,
+                                "name": "Сверстать большой хуй",
+                                "children": []
+                            }
+                        ]
+                    }]
+                }
+            ],
+            "freelance.habr.com": [
+                {
+                    "id": 6,
+                    "name": "Написать сайт",
+                    "children": [{
+                        "id": 12,
+                        "name": "Верстка",
+                        "children": [
+                            {
+                                "id": 15,
+                                "name": "Сверстать большой хуй",
+                                "children": []
+                            }
+                        ]
+                    }]
+                }
+            ],
+            "kwork.ru": [
+                {
+                    "id": 3,
+                    "name": "Копирайтинг",
+                    "children": [{
+                        "id": 12,
+                        "name": "Верстка",
+                        "children": [
+                            {
+                                "id": 15,
+                                "name": "Сверстать большой хуй",
+                                "children": []
+                            }
+                        ]
+                    }]
+                },
+                {
+                    "id": 5,
+                    "name": "Английский язык",
+                    "children": [{
+                        "id": 12,
+                        "name": "Верстка",
+                        "children": [
+                            {
+                                "id": 15,
+                                "name": "Сверстать большой хуй",
+                                "children": []
+                            }
+                        ]
+                    }]
+                },
+                {
+                    "id": 8,
+                    "name": "Дизайн",
+                    "children": [
+                        {
+                            "id": 9,
+                            "name": "Арт и иллюстрации",
+                            "children": []
+                        },
+                        {
+                            "id": 10,
+                            "name": "Веб и мобильный дизайн",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "name": "Разработка и IT",
+                    "children": [
+                        {
+                            "id": 12,
+                            "name": "Верстка",
+                            "children": [
+                                {
+                                    "id": 15,
+                                    "name": "Сверстать большой хуй",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 13,
+                            "name": "Десктоп программирование",
+                            "children": []
+                        },
+                        {
+                            "id": 14,
+                            "name": "Доработка и настройка сайта",
+                            "children": []
+                        }
+                    ]
+                }
+            ],
+            "fl.ru": [
+                {
+                    "id": 1,
+                    "name": "Дизайн",
+                    "children": [{
+                        "id": 4,
+                        "name": "Ui/Ux",
+                        "children": []
+                    }, {
+                        "id": 4,
+                        "name": "Ui/Ux",
+                        "children": []
+                    }, {
+                        "id": 4,
+                        "name": "Ui/Ux",
+                        "children": []
+                    }, {
+                        "id": 4,
+                        "name": "Ui/Ux",
+                        "children": []
+                    }, {
+                        "id": 4,
+                        "name": "Ui/Ux",
+                        "children": []
+                    },]
+                },
+                {
+                    "id": 2,
+                    "name": "Программирование",
+                    "children": [
+                        {
+                            "id": 4,
+                            "name": "Python",
+                            "children": []
+                        }, {
+                            "id": 4,
+                            "name": "Ui/Ux",
+                            "children": []
+                        }, {
+                            "id": 4,
+                            "name": "Ui/Ux",
+                            "children": []
+                        }, {
+                            "id": 4,
+                            "name": "Ui/Ux",
+                            "children": []
+                        }, {
+                            "id": 4,
+                            "name": "Ui/Ux",
+                            "children": []
+                        }, {
+                            "id": 4,
+                            "name": "Ui/Ux",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+        localStorage.removeItem('respdata')
+        localStorage.setItem('respdata', JSON.stringify(obj));
     }
-    catch (e) {
-    console.log("ERROR axios cant parse", e)
-    obj = {
-    "freelance.ru": [
-        {
-            "id": 7,
-            "name": "Я хуесос",
-            "children": [{
-                    "id": 12,
-                    "name": "Верстка",
-                    "children": [
-                        {
-                            "id": 15,
-                            "name": "Сверстать большой хуй",
-                            "children": []
-                        }
-                    ]
-                }]
-        }
-    ],
-    "freelance.habr.com": [
-        {
-            "id": 6,
-            "name": "Написать сайт",
-            "children": [{
-                    "id": 12,
-                    "name": "Верстка",
-                    "children": [
-                        {
-                            "id": 15,
-                            "name": "Сверстать большой хуй",
-                            "children": []
-                        }
-                    ]
-                }]
-        }
-    ],
-    "kwork.ru": [
-        {
-            "id": 3,
-            "name": "Копирайтинг",
-            "children": [{
-                    "id": 12,
-                    "name": "Верстка",
-                    "children": [
-                        {
-                            "id": 15,
-                            "name": "Сверстать большой хуй",
-                            "children": []
-                        }
-                    ]
-                }]
-        },
-        {
-            "id": 5,
-            "name": "Английский язык",
-            "children": [{
-                    "id": 12,
-                    "name": "Верстка",
-                    "children": [
-                        {
-                            "id": 15,
-                            "name": "Сверстать большой хуй",
-                            "children": []
-                        }
-                    ]
-                }]
-        },
-        {
-            "id": 8,
-            "name": "Дизайн",
-            "children": [
-                {
-                    "id": 9,
-                    "name": "Арт и иллюстрации",
-                    "children": []
-                },
-                {
-                    "id": 10,
-                    "name": "Веб и мобильный дизайн",
-                    "children": []
-                }
-            ]
-        },
-        {
-            "id": 11,
-            "name": "Разработка и IT",
-            "children": [
-                {
-                    "id": 12,
-                    "name": "Верстка",
-                    "children": [
-                        {
-                            "id": 15,
-                            "name": "Сверстать большой хуй",
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "id": 13,
-                    "name": "Десктоп программирование",
-                    "children": []
-                },
-                {
-                    "id": 14,
-                    "name": "Доработка и настройка сайта",
-                    "children": []
-                }
-            ]
-        }
-    ],
-    "fl.ru": [
-        {
-            "id": 1,
-            "name": "Дизайн",
-            "children": [{
-                    "id": 4,
-                    "name": "Ui/Ux",
-                    "children": []
-                },{
-                    "id": 4,
-                    "name": "Ui/Ux",
-                    "children": []
-                },{
-                    "id": 4,
-                    "name": "Ui/Ux",
-                    "children": []
-                },{
-                    "id": 4,
-                    "name": "Ui/Ux",
-                    "children": []
-                },{
-                    "id": 4,
-                    "name": "Ui/Ux",
-                    "children": []
-                },]
-        },
-        {
-            "id": 2,
-            "name": "Программирование",
-            "children": [
-                {
-                    "id": 4,
-                    "name": "Python",
-                    "children": []
-                },{
-                    "id": 4,
-                    "name": "Ui/Ux",
-                    "children": []
-                },{
-                    "id": 4,
-                    "name": "Ui/Ux",
-                    "children": []
-                },{
-                    "id": 4,
-                    "name": "Ui/Ux",
-                    "children": []
-                },{
-                    "id": 4,
-                    "name": "Ui/Ux",
-                    "children": []
-                },{
-                    "id": 4,
-                    "name": "Ui/Ux",
-                    "children": []
-                }
-            ]
-        }
-    ]
-}
-localStorage.removeItem('respdata')
-localStorage.setItem('respdata', JSON.stringify(obj));
-    }
-
 
 
 }
@@ -234,12 +232,12 @@ function set_picture_category() {
     }
 
 
+}
+
+function add_category_list(category = '', birzha = '') {
 
 }
 
-function add_category_list(category='',birzha = ''){
-
-}
 function backButton() {
     window.location.href = 'index.html';// Используется для перехода назад в истории браузера
 
@@ -250,16 +248,45 @@ let list = document.querySelector("ul");
 let section = 0;
 
 
+function money_add() {
+    if (document.querySelector(".search-setup")) {
+        let e = document.querySelector(".budget__input-block input");
+
+        t = e.parentElement;
+        e.addEventListener("mouseenter", (function () {
+            t.classList.add("budget__input-active")
+
+        }));
+        e.addEventListener("mouseleave", (function () {
+            e.value.trim() || t.classList.remove("budget__input-active")
+            if (e.value && !isNaN(e.value)) {
+                console.log(e.value.trim())
+            }
+        }));
+        e.addEventListener("input", (function () {
+            e.value.trim() ? t.classList.add("budget__input-active") : t.classList.remove("budget__input-active")
+
+        }))
+
+    }
+
+}
 
 let i = 0;
 
-function check_check() {
-    if (i % 2 === 0) {
-        console.log("да")
-    } else {
-        console.log("нет")
-    }
-    i++;
+function check_switch_toggle() {
+    document.querySelectorAll(".switch input").forEach((function (e) {
+
+        e.addEventListener("click", (function () {
+            let t = e.closest(".toggle");
+            t && t.classList.toggle("toggle__active")
+            if (e.checked) {
+
+                console.log('checked')
+
+            }
+        }))
+    }))
 }
 
 function add_button_for_words(word = '', array = ['']) {
@@ -343,6 +370,7 @@ function createList(data, parentElement) {
             const detailsButton = createDetailsButton(category);
 
             listItem.appendChild(detailsButton);
+
             console.log('btn', detailsButton)
             detailsButton.style.paddingRight = '10px';
         }
@@ -353,7 +381,7 @@ function createList(data, parentElement) {
     parentElement.appendChild(listContainer);
 }
 
-function createExpandButton(category ='') {
+function createExpandButton(category = '') {
 
     const expandButton = document.createElement('button');
 
@@ -365,10 +393,10 @@ function createExpandButton(category ='') {
         subList.className = "sublist"
         if (subList.style.display === 'none') {
             subList.style.display = 'block';
-            this.style.boxShadow="-7px 5px 5px grey"
+
             console.log('sub', subList)
         } else {
-            this.style.boxShadow="0px 0px 0px grey"
+
             subList.style.display = 'none';
         }
     });
@@ -376,31 +404,87 @@ function createExpandButton(category ='') {
 }
 
 function createDetailsButton(category) {
+
     const detailsButton = document.createElement('button');
+
     detailsButton.className = 'details';
 
     detailsButton.innerHTML = category.name;
     detailsButton.addEventListener('click', function () {
-        if(detailsButton.style.background ==='seagreen'){
+        if (detailsButton.style.background === 'seagreen') {
             detailsButton.style.background = 'floralwhite'
 
-            detailsButton.style.scale="1"
-             detailsButton.style.boxShadow="-7px 0px 5px grey"
+            detailsButton.style.scale = "1"
 
-        }
-        else{
+
+        } else {
             detailsButton.style.background = 'seagreen'
 
-       detailsButton.style.boxShadow="-7px 0px 0px grey"
-        detailsButton.style.scale="0.99"
-        }
-        detailsButton.style.transition = "background 0.3s, box-shadow 0.5s, scale 0.5s";
 
+            detailsButton.style.scale = "0.99"
+        }
+        detailsButton.style.transition = "background 0.3s,  scale 0.5s";
 
 
     });
     return detailsButton;
 }
+
+
+function e(e, n, o, i) {
+    let r = o.value.trim();
+    if (r) {
+        let s = document.createElement("div");
+        s.classList.add("keywords__result");
+        let l = document.createElement("div");
+        l.classList.add("keywords__text");
+        l.textContent = r;
+        let c = document.createElement("span");
+        c.classList.add("delete-button");
+        c.textContent = "×";
+        c.addEventListener("click", (function () {
+            s.remove();
+            rt(e, n, o);
+        }));
+        s.appendChild(l);
+        s.appendChild(c);
+        i.appendChild(s);
+        o.value = "";
+        rt(e, n, o)
+
+    }
+
+}
+
+function rt(e, t, n) {
+    t.style.display = n.value.trim() ? "inline-block" : "none"
+}
+
+function add_to() {
+
+    document.querySelectorAll(".choices-setup").forEach((function (n) {
+        var o = n.querySelector(".choices__input"), i = n.querySelector(".choices__input input"),
+                        r = n.querySelector(".add-button"), s = n.querySelector(".keywords__container");
+        o.addEventListener("mouseenter", (function () {
+            o.classList.add("choices__input-active")
+        }));
+        o.addEventListener("mouseleave", (function () {
+            i.value.trim() || o.classList.remove("choices__input-active")
+        }));
+        i.addEventListener("input", (function () {
+            rt(0, r, i)
+        }));
+        r.addEventListener("click", (function () {
+            e(o, r, i, s)
+        }));
+        i.addEventListener("keyup", (function (t) {
+            "Enter" === t.key && e(o, r, i, s)
+        }))
+    }))
+}
+
+
+
 
 
 
