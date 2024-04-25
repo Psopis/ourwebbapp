@@ -44,6 +44,10 @@ body {
     padding: 5px;
     float: left;
 }
+.birzha_selector_block:active{
+    background: #999494;
+    transition: background 0.5s;
+}
 
 
 .FL_block {
@@ -98,7 +102,7 @@ body {
     width: 82px;
     height: 42px;
 
-    border-radius:  10px 0px  0px 10px;
+    border-radius: 0.5rem;
     cursor: pointer;
 
 

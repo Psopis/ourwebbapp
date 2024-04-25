@@ -69,14 +69,14 @@ body {
 
 }
 .details {
-    display: inline;
+    display: table;
 
-    height: 3.8em;
-    width: 100%;
+    width: 98vw;
+    height: 7vh;
     margin-right: 0;
     align-items: start;
 
-    background-color: #F5F2EA;
+    background-color: floralwhite;
     /*background-color: #000009;*/
     box-shadow:  -7px 5px 5px gray;
     color: #212529;
@@ -97,20 +97,19 @@ body {
 
 }
 
-
 .slide-checkbox {
     text-align: start;
     font-weight: 700;
     font-size: 20px;
 
-    width: 20.7em;
-    height: 3.8em;
+    width: 98vw;
+    height: 7vh;
 
 
     background-color: #F5F2EA;
     /*background-color: #F5F2EA;*/
 
-box-shadow:  -7px 5px 5px gray;
+    box-shadow:  -7px 5px 5px gray;
     border: 1px solid #bdbdbd;
 
 
@@ -131,20 +130,18 @@ box-shadow:  -7px 5px 5px gray;
 
 
 .listItem {
-
-
-    width: 100%;
+    width: 150%;
 
 }
 .img_fl {
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 1em;
     display: none;
     height: 5em;
 }
 
 .img_free {
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 1em;
     display: none;
     height: 6em;
@@ -152,7 +149,7 @@ box-shadow:  -7px 5px 5px gray;
 
 .img_habr {
 
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 1em;
     display: none;
     height: 5em;
@@ -161,7 +158,7 @@ box-shadow:  -7px 5px 5px gray;
 }
 
 .img_kwork {
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 1em;
     display: none;
     height: 6em;
